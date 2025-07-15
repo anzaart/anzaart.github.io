@@ -1,0 +1,94 @@
+/* Import a cute font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(145deg, #ffe7f0, #e3f2fd);
+  color: #444;
+  padding: 20px;
+}
+
+/* Header */
+header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+h1 {
+  font-size: 3rem;
+  color: #e91e63;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.05);
+}
+
+/* Gallery Layout */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: center;
+}
+
+/* Art Card Style */
+.art-card {
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  width: 280px;
+  overflow: hidden;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.art-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+.art-card img {
+  width: 100%;
+  display: block;
+}
+
+.caption {
+  padding: 12px;
+  font-size: 0.95rem;
+  text-align: center;
+  background-color: #fff0f5;
+  color: #555;
+  border-top: 1px solid #ffe4ec;
+}
+
+/* Video Section */
+.video-section {
+  text-align: center;
+  margin-top: 60px;
+}
+
+.video-section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #7b1fa2;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.05);
+}
+
+video {
+  width: 70%;
+  max-width: 600px;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  margin-top: 60px;
+  font-size: 0.8rem;
+  color: #777;
+  padding-bottom: 10px;
+}
